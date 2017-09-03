@@ -19,8 +19,8 @@ module ContactForm
    :address => "smtp.gmail.com",
    :domain => "mail.google.com",
    :port => 587,
-   :user_name => "abhigeek8@gmail.com",
-   :password => "gom98765",
+   :user_name => ENV['GMAIL_USERNAME'],
+   :password => ENV['GMAIL_PASSWORD'],
    :authentication => "login",
    :enable_starttls_auto => true
 }
